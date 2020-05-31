@@ -1,0 +1,91 @@
+
+aside p {
+  margin: 0;
+  padding-left: 100px;
+  text-indent: 0;
+  width: 65%;
+}
+
+aside h3 {
+  color: #555;
+  font-size: 1.6em;
+  padding-bottom: 10px;
+  padding-left: 100px;
+}
+
+aside img {
+  float: left;
+}
+
+aside {
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
+
+aside button {
+  background: #b8705a;
+  border: none;
+  color: #fff;
+  float: right;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.2em;
+  padding: 15px 40px;
+  text-transform: uppercase;
+}
+
+.date {
+  float: left;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5em;
+  margin-top: 50px;
+}
+
+input {
+  font-family: 'Patrick Hand', cursive;
+}
+
+.print {
+  float: right;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.print, .date {
+  color: #a9a8a5;
+  font-family: 'Abel', sans-serif;
+  font-size: .8em;
+  margin: 0;
+  margin-bottom: 33px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.print img {
+  margin-right: 3px;
+}
+
+.recipe {
+  background-image: url("img/list-bg.png");
+  color: #666a42;
+  font-family: 'Patrick Hand', cursive;
+  height: 260px;
+  letter-spacing: .1em;
+  margin: 40px 0;
+  padding: 37px 0 0 60px;
+}
+
+.recipe li {
+  float: left;
+  font-size: 1.3em;
+  line-height: 31px;
+  width: 40%;
+}
+
+section hr {
+  border-bottom: 1px solid #eee;
+  height: 0;
+}
+
