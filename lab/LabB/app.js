@@ -108,9 +108,7 @@ const newObject = array => ({
 
 
 
-const sum = (a,b,c,d) => {
-  return `${a + b + c + d}`;
-};
+const sum = (a,b,c,d) => `${a + b + c + d}`;
 
 
 
@@ -130,34 +128,35 @@ const objectLit = array => ({
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(objectLit());
 
-let sumAndProduct = function(a, b) {
-  let sum = a + b;
-  let product = a * b;
-  return [sum, product];
-};
+// let sumAndProduct = function(a, b) {
+//   let sum = a + b;
+//   let product = a * b;
+//   return [sum, product];
+// };
 
-const sumAndProduct = (a , b) => {
-  `${a+b} is the sum ${a*b} is the product.`;
-};
+const sumAndProduct = (a , b) => ({
+   sum : `${a + b}`,
+   product : `${a * b}`,
+  return: sum, product,
+});
 console.log(sumAndProduct(3, 9));
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(sumAndProduct(3, 9));
 
 
-const message = name => {
-  return `Hello, ${name}!`;
-};
+const message = name => `Hello, ${name}!`;
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(message('Allie'));
 
 
-const Student = array => {
-  firstValue = name;
-  secondValue = age;
-  thirdValue = hometown;
-};
+const Student = array => ({
+  firstValue : name,
+  secondValue : age,
+  thirdValue : hometown,
+});
 
 let joe = new Student('Joe', 'Schmoe', 100);
 
@@ -169,9 +168,8 @@ let joe = new Student('Joe', 'Schmoe', 100);
 
 
 
-Student.prototype.greeting = function() {
-  return `Hi, my name is ${this.name}`;
-};
+Student.prototype.greeting = () => `Hi, my name is ${this.name}`;
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this method to break!
@@ -206,8 +204,13 @@ Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+
+//This is referring to the methods inside the constructor function.
+
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+
+//This is now a global variable and will be undefined.  The arrow function is not locally scoped to the constructor function. 
+
 // 3. Explain why "this" is different when an arrow function is used.
-//
+
+// This is different because arrow functions are permamnently bound to global context. 
